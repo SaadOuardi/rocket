@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/rocket/static/css/main.b7265045.css",
+    "main.js": "/rocket/static/js/main.a2534a4a.js",
+    "static/js/453.8ab44547.chunk.js": "/rocket/static/js/453.8ab44547.chunk.js",
+    "static/media/Ninja.jpg": "/rocket/static/media/Ninja.04a0095779de4043d432.jpg",
+    "static/media/Tfue.png": "/rocket/static/media/Tfue.69479bc12ae1104db1f4.png",
+    "static/media/mention.png": "/rocket/static/media/mention.89f35c3184ced6e78836.png",
+    "static/media/ElonMusk.webp": "/rocket/static/media/ElonMusk.b0845a30a52dec5ad464.webp",
+    "static/media/no-message.png": "/rocket/static/media/no-message.d89c0cb0c6567887935d.png",
+    "static/media/request.png": "/rocket/static/media/request.cb0053ac891b8e5a1a97.png",
+    "static/media/comment.png": "/rocket/static/media/comment.d205291be2b50572d094.png",
+    "static/media/like.png": "/rocket/static/media/like.4dc9f877cbe9cacc9afc.png",
+    "static/media/share.png": "/rocket/static/media/share.c7454fb05c61b06d8417.png",
+    "static/media/Logo.png": "/rocket/static/media/Logo.bd1777618b10f91ee1a0.png",
+    "index.html": "/rocket/index.html",
+    "main.b7265045.css.map": "/rocket/static/css/main.b7265045.css.map",
+    "main.a2534a4a.js.map": "/rocket/static/js/main.a2534a4a.js.map",
+    "453.8ab44547.chunk.js.map": "/rocket/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7265045.css",
+    "static/js/main.a2534a4a.js"
+  ]
+}
