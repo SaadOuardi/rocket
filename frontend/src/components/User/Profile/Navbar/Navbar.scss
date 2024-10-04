@@ -1,0 +1,28 @@
+.Profile-Navbar{
+    display: flex;
+    padding: 20px;
+    a{
+        color: white;
+        background-color: transparent;
+        border-radius: 0;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+        background-color: rgb(48, 48, 48);
+        padding: 15px 30px;
+        cursor: pointer;
+        transition: all .3s ease-in;
+    }
+    a:first-child{
+        border-radius: 9px 0 0 9px;
+        border-left: none;
+    }
+    a:last-child{
+        border-radius: 0 9px 9px 0;
+    }
+    a:hover{
+        background-color: rgb(93, 93, 93);
+    }
+    .Container-Bg:hover{
+        background-color: transparent;
+    }
+}

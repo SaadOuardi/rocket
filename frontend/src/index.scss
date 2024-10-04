@@ -1,0 +1,544 @@
+/*-----------------------------------FONTS-----------------------------------*/
+
+/* -------Signika------- */
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+
+:root{
+  // BRIGHT MODE & LIGHT MODE//
+  --primary-bgColor-color: rgb(17, 120, 255);
+  //------------BRIGHT MODE------------//
+    //------BG COLORS------//
+    --primary-bgColor-bm: rgb(231, 232, 233);
+    --secondary-bgColor-bm: #FFFFFF;
+    --primary-hoverBgColor-bm: rgb(188, 188, 188);
+
+    //------COLORS------//
+    --primary-color-bm: black;
+    --secondary-color-bm: #333333;
+
+  //------------DARK MODE------------//
+    //------BG COLORS------//
+    --primary-bgColor-dm: #1a1a1a;
+    --secondary-bgColor-dm: #343434;
+    --primary-hoverBgColor-dm: rgb(50, 50, 50);
+
+    //------COLORS------//
+    --primary-color-dm: white;
+    --secondary-color-dm: #E0E0E0;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Signika", sans-serif;
+}
+img{
+  height: 60px;
+  width: 60px;
+}
+img.Profile{
+  border-radius: 100px;
+}
+button{
+  background-color: rgb(17, 120, 255);
+  color: white;
+  width: fit-content;
+  height: 50px;
+  padding: 5px 50px;
+  border-radius: 9px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s linear;
+  cursor: pointer;
+    svg{
+      color: white;
+      height: 30px;
+      width: 30px;
+    }
+}
+button:hover{
+  background-color: rgb(24, 110, 223);
+}
+button.enabled{
+  background-color: rgb(17, 120, 255);
+}
+button.disabled{
+  background-color: grey;
+}
+svg{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: rgb(0, 145, 255);
+}
+
+li{
+  list-style: none;
+  cursor: pointer;
+}
+select{
+  height: 30px;
+  width: 100px;
+  background-color: grey;
+  color: white;
+  border-radius: 9px;
+  border: none;
+  outline: none;
+}
+body{
+  background-color: var(--primary-bgColor-bm);
+}
+main{
+  background-color: var(--primary-bgColor-bm);
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .Main-Content{
+    width: 100%;
+    background-color: var(--primary-bgColor-bm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .Main-Header{
+      width: 100%;
+      background-color: var(--secondary-bgColor-bm);
+    }
+    .Main-Body{
+      width: 100%;
+      background-color: var(--primary-bgColor-bm);
+    }
+  }
+
+}
+div.liked{
+  background-color: var(--primary-bgColor-color) !important;
+  svg{
+    color: white !important;
+  }
+}
+.Conversation__container{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.side-1,.side-3{
+  height: 700px;
+  width: 300px;
+  padding: 20px 0;
+}
+.side-2{
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 0;
+}
+.side-3{
+  overflow-y: scroll;
+}
+.side-3::-webkit-scrollbar {
+  overflow-y:scroll;
+}
+.container{
+  background-color: var(--secondary-bgColor-bm);
+  color: var(--primary-color-bm);
+  border-radius: 16px;
+}
+.container__content{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  padding: 8px 15px;
+}
+// GAP CONTAINER //
+.row-gap__container{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.column-gap__container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.user-feed__container{
+  position: sticky;
+  top: 10px;
+  z-index: 3;
+}
+.sticky__container{
+  position: sticky;
+  top: 60px;
+}
+.Scroll{
+  // width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+}
+.Scroll::-webkit-scrollbar {
+  width: 12px; /* Width of the entire scrollbar */
+}
+.Scroll::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+.Scroll::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the handle */
+  border-radius: 10px; /* Roundness of the handle */
+  border: 3px solid #f1f1f1; /* Padding around handle */
+}
+.Scroll::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Handle color on hover */
+}
+
+// Icon //
+.Icon-Bg{
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  padding: 5px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  svg{
+    height: 25px;
+    width: 25px;
+    color: white;
+    transition: all 0.3s linear;
+  }
+}
+.Icon-Bg:hover{
+  background-color: rgb(38, 38, 38);
+  svg{
+    transform: scale(0.9);
+  }
+}
+// Background //
+.Active-Bg{
+  background-color: rgb(0, 68, 193);
+}
+.Container-Bg{
+  padding: 10px;
+  border-radius: 9px;
+}
+.Container-Bg:hover{
+  background-color: grey;
+  transition: all 0.3s linear;
+}
+// Lightbox //
+.Main-Lightbox{
+  background-color: rgba(0, 0, 0, 0.733);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Lightbox{
+  background-color: white;
+  box-shadow: .2px .2px 5px black;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  h1{
+    text-align: center;
+  }
+}
+// Display Flex //
+.Flex-Center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.Flex-Wrap{
+    flex-wrap: wrap;
+}
+.Flex-Row{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.Flex-Column{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.Flex-Between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Flex-Start{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.Flex-End{
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+}
+// Padding //
+.Primary-Padding{
+  padding: 20px 0;
+}
+.Verification{
+  svg{
+      color: rgb(0, 149, 255) !important;
+  }
+}
+.UserConversation{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  .Background{
+      background-color: rgb(48, 48, 48);
+      color: white;
+      border-radius: 100px;
+      padding: 10px;
+  }
+}
+input{
+  height: 45px;
+  width: 400px;
+  background-color: grey;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  padding: 0 8px;
+  flex-shrink: 1 !important;
+}
+input::placeholder{
+  color: white;
+}
+.MainConversation{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  .Background{
+      background-color: rgb(0, 132, 255);
+      color: white;
+      border-radius: 100px;
+      padding: 10px;
+  }
+}
+/* ------------------------------------------------AUTHENTICATION------------------------------------------------ */
+.Authentication{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .Logo-Container{
+    img{
+      height: 150px;
+      width: 150px;
+    }
+    p{
+      font-size: 30px;
+    }
+  }
+
+  .SocialMedia{
+    background-color: white;
+    width: 200px;
+    padding: 4px 50px;
+    border: 2px solid black;
+    border-radius: 100px;
+    cursor: pointer;
+    img{
+      height: 35px;
+      width: 35px;
+    }
+  }
+
+}
+form{
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+
+  input{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(175, 175, 175);
+    color: black;
+    padding-left: 40px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+  }
+  input:hover{
+    background-color: rgb(201, 201, 201);
+  }
+  input[type="submit"]{
+    background-color: black;
+    color: white;
+    padding: 0;
+    cursor: pointer;
+    width: calc(300px + 40px);
+  }
+  input[type="submit"]:hover{
+    background-color: rgb(39, 37, 37);
+  }
+  input[type="checkbox"]{
+    height: 25px;
+    width: 25px;
+  }
+
+  .input__container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    svg{
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translate(-50%,-50%);
+    }
+    .Toogle-Svg{
+      position: absolute;
+      top: 50%;
+      right: 40px;
+    }
+  }
+}
+.form-container{
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Left-Side , .Right-Side{
+  padding: 50px 20px;
+  flex-grow: 1;
+}
+.Left-Side{
+  border-radius: 50px 0 0 50px;
+  width: 300px;
+  background-color: rgb(162, 162, 162);
+  color: white;
+}
+.Right-Side{
+  border-radius: 0 50px 50px 0;
+  width: 400px;
+  height: fit-content;
+  background-color: white;
+  color: black;
+}
+.LogIn__links_container{
+  width: calc(300px + 40px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  .input__container{
+    width: fit-content;
+  }
+  .Forgot-Password{
+    a{
+      font-size: 15px;
+    }
+  }
+}
+p.authMessage{
+  color: red;
+}
+.agree__container{
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  width: calc(300px + 20px);
+  text-align: center;
+}
+// KeyFranes :
+@keyframes Alert {
+  0%{
+      opacity: 0;
+      top: 50%;
+  }
+
+  100%{
+      opacity: 1;
+      top: 15%;
+  }
+  
+}
+//----------------------MOBILE VERSION----------------------//
+@media screen and (max-width:768px) {
+  header,.side-1, .side-3{
+      display: none;
+  }
+
+  .side-0, .side-2{
+      width: 100%;
+  }
+}
+/*----------------------TABLET DEVICES----------------------*/
+@media only screen and (max-width: 768px ) and (max-width:1023px){
+  main{
+    padding: 0 0 80px 0;
+  }
+  header,.side-1, .side-3{
+      display: none;
+  }
+  .side-0, .side-2{
+      width: 100%;
+  }
+}
+/*----------------------LAPTOP DEVICES----------------------*/
+@media only screen and (max-width: 1024px ) and (max-width:1439px){
+  header,.side-1, .side-3{
+      display: none;
+  }
+  .side-0, .side-2{
+      width: 100%;
+  }
+}
+/*----------------------DESCKTOP DEVICES----------------------*/
+@media only screen and(max-width: 1440px ){
+  .side-3{
+      display: none;
+  }
+}

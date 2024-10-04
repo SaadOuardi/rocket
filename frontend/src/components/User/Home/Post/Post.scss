@@ -1,0 +1,99 @@
+.Post{
+    width: 600px;
+    height: fit-content;
+    border-radius: 24px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    hr{
+        background-color: black;
+        height: 2px;
+        border: none;
+    }
+
+    .UserProfile{
+        img{
+            border-radius: 100px;
+        }
+    }
+
+    .UserPost{
+        width: 100%;
+        padding: 15px;
+
+        .InputPost__container{
+            width: 98%;
+            input{
+                width: 95%;
+                height: 32px;
+                background-color: rgb(229, 227, 227);
+                color: white;
+                border: none;
+                outline: none;
+                padding: 10px 0;
+                padding-left: 15px;
+                font-size: 20px;
+                // border: 0.5px solid rgb(0, 0, 0);
+                box-shadow: .2px .2px 10px rgb(99, 99, 99);
+                border-radius: 100px;
+            }
+        
+            input::placeholder{
+                color: rgb(147, 146, 146);
+            }
+        }
+    }
+
+    button.post-btn{
+        padding: 20px 40px;
+    }
+}
+
+.post__navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .Icon-Bg{
+        height: fit-content;
+        width: fit-content;
+        padding: 12px;
+        svg{
+            height: 22px;
+            width: 22px;
+        }
+    }
+}
+.post-row2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.post-btn{
+    border-radius: 100px;
+    height: 25px;
+    width: 40px;
+    padding: 2px 40px;
+}
+.icons__navbar{
+    display: flex;
+    color: rgb(0, 98, 255);
+    padding: 8px 5px;
+    gap: 10px;
+    svg{
+        transition: all .3s linear;
+    }
+    svg:hover{
+        cursor: pointer;
+        color: gold;
+    }
+}
+.show-more__Post{
+    border: 1px solid rgb(75, 75, 75);
+    border-radius: 0 !important;
+    width: calc(700px + 40px) !important;
+}
+.show-more__Post:hover{
+    background-color: rgb(33, 33, 33);
+}

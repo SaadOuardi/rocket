@@ -1,0 +1,51 @@
+.Feed-Navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .Icon-Bg{
+        // background-color: transparent;
+        height: 25px;
+        width: 25px;
+        svg{
+            height: 18px;
+            width: 18px;
+        }
+    }
+    .Feed-Navbar__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+            .Icon-Bg{
+                background-color: rgb(130, 130, 130);
+                svg{
+                    color: white;
+                }
+            }
+            h3{
+                font-size: 18px;
+            }
+
+            *{
+                transition: all 0.3s ease-in;
+            }
+
+        }
+        li:hover{
+            .Icon-Bg {
+                background-color: var(--primary-bgColor-color) !important;
+                svg{
+                    color: white !important;
+                }
+            }
+        }
+    }
+}    
+
+

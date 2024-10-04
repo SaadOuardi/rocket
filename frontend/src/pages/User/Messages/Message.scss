@@ -1,0 +1,119 @@
+.Chat{
+    width: 100%;
+    height: 100vh;
+    align-items: start !important;
+    .Chat-LeftSide{
+        background-color: rgb(56, 56, 56);
+        color: white;
+        width: 30%;
+        height: 100vh;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 10px;
+        .Title, .Input-Container, .ChatList{
+            width: 100%;
+        }
+        .Title{
+            padding: 20px;
+        }
+        .Input-Container{
+            input{
+                width: 90%;
+            }
+        }
+        .ChatList{
+            gap: 8px;
+        }
+        .Scroll{
+            height: 100vh;
+        }
+    }
+    .Chat-RightSide{
+        width: 70%;
+        height: 100vh;
+        border: 5px solid rgb(74, 74, 74);
+        .Chat-RightSide-Content{
+            height: 100%;
+            .Header{
+                background-color: rgb(74, 74, 74);
+                color: white;
+                width: 100%;
+                height: 10%;
+                .Header-Content{
+                    width: 100%;
+                    justify-content: space-between;
+                }
+            }
+            .Body{
+                height: 80%;
+                .Body-Content{
+                    height: calc(100vh - 30vh);
+                    padding: 5px;
+                    img{
+                        border-radius: 100px;
+                    }
+                }
+                
+            }
+            .Footer{
+                background-color: rgb(74, 74, 74);
+                height: 10%;
+                padding: 5px;
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 5px;                    
+                    .Icon-Bg{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        svg{
+                            height: 25px;
+                            width: 25px;
+                        }
+                    }
+                }
+                .Input-Container{
+                    flex: 1;
+                }
+                input{
+                    height: 45px;
+                    width: 100%;
+                    background-color: grey;
+                    color: white;
+                    border-radius: 100px;
+                    border: none;
+                    outline: none;
+                    padding: 0 8px;
+                    flex-shrink: 1 !important;
+                }
+                input::placeholder{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.ChatBar{
+    background-color: rgb(0, 170, 255) !important;
+    color: white !important;
+    height: 100px;
+    width: 90%;
+    padding: 10px;
+    cursor: pointer;
+    .Profile-Container{
+        width: 20%;
+    }
+    .Chat-Data{
+        width: 80%;
+        align-items: start;
+        .Name-Time{
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+}

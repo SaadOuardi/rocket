@@ -1,0 +1,43 @@
+header{
+    background-color: var(--secondary-bgColor-bm);
+    padding: 5px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    border-bottom: 1.2px solid rgb(154, 154, 154);
+    box-shadow: 2px 2px 10px grey;
+    .Header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .HeaderNavbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+
+        .SecondHeaderNavbar{
+            display: flex;
+            gap: 8px;
+            .Icon-Bg{
+                background-color: transparent;
+                border-radius: 9px;
+                padding: 5px 25px;
+                svg{
+                    height: 30px;
+                    width: 30px;
+                    color: black;
+                }
+            }
+            .Icon-Bg:hover{
+                background-color: rgb(199, 199, 199);
+                
+            }
+            .Active{
+                border-bottom: 4px solid blue;
+            }
+        }
+    }
+}

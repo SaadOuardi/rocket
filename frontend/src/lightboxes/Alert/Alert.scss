@@ -1,0 +1,27 @@
+.Alert{
+    .Alert-Content{
+        height: fit-content;
+        width: fit-content;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        position: fixed;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 99999;
+        animation: Alert .2s linear;
+        svg{
+            height: 30px;
+            width: 30px;
+            color: white;
+        }
+        h1{
+            font-size: 18px;
+            color: white;
+        }
+    }
+}
+

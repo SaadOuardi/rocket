@@ -1,0 +1,103 @@
+.User-Profile{
+    position: relative;
+    cursor: pointer;
+    background-color: transparent !important;
+    img{
+        border: none;
+        height: 50px;
+        width: 50px;
+        border-radius: 100px;
+    }         
+    svg{
+        height: 30px;
+        width: 30px;
+    }
+
+    .DropdownMenu{
+        .Dropdown{
+            width: 300px;
+            height: fit-content;
+            background-color: var(--primary-bgColor-bm);
+            box-shadow: .2px .2px 5px grey;
+            position: absolute;
+            top: 100%;
+            right: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 9px;
+            padding: 20px;
+
+            hr{
+                background-color: grey;
+                height: 2px;
+                width: 100%;
+                border: none;
+            }
+            
+            a{
+                color: black;
+                width: 100%;
+                padding: 10px;
+                border-radius: 4px;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                font-size: 18px;
+                transition: all 0.3s linear;
+            }
+            a:hover{
+                background-color: rgb(152, 152, 152);
+            }
+
+            a:last-child{
+                height: 40px;
+                background-color: red;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            a:last-child:hover{
+                background-color: rgb(45, 45, 45);
+            }
+
+        }
+    }
+}
+
+.User-Profile:hover{
+    .DropdownMenu{
+        display: block;
+    }
+}
+
+
+
+/*---------------------- MOBILE VERSION----------------------*/
+@media screen and (max-width: 768px){
+    .UserMenu{
+        .UserMenu__list{
+            display: none;
+        }
+    }
+
+}
+
+
+/* ----------- TABLET DEVICES----------- */
+@media only screen and (max-width: 768px ) and (max-width:1023px){
+
+}
+
+/* ----------- LAPTOP DEVICES----------- */
+@media only screen and (max-width: 1024px ) and (max-width:1439px){
+
+}
+
+/* ----------- DESCKTOP DEVICES----------- */
+@media only screen and(max-width: 1440px ){
+
+}
