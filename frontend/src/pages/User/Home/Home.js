@@ -47,16 +47,13 @@ const Home = () => {
             <div className='side-0'>
                 <Navbar/>
             </div>
-
             <div className='side-1 sticky__container Primary-Padding'>
                 <Sidebar/>
             </div>
-    
             <div className='side-2'>
                 <div>
                     <Post userID={user.userId} />
                 </div>
-
                 {!FeedData >= 0? (
                     FeedData.map(feed => 
                         (

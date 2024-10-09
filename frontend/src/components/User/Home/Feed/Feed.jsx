@@ -11,6 +11,16 @@ export const Feed = ({ feed, onDelete, userId }) => {
     const IconError = () => (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11 15V17H13V15H11ZM11 7V13H13V7H11Z"></path></svg>
     );
+    const handlePostDelete = () => {
+        setError(!Error);
+        setTimeout(() => {
+            setError(false);
+            onDelete(feed.id);
+        }, 2000);
+    };
+    const handlePostHide = () => {
+        setPostHide(!postHide)
+    };
     useEffect(() => {
         const fetchLikeCount = async () => {
             try {
@@ -23,17 +33,7 @@ export const Feed = ({ feed, onDelete, userId }) => {
             }
         };
         fetchLikeCount();
-    }, [feed.id]);
-    const handlePostDelete = () => {
-        setError(!Error);
-        setTimeout(() => {
-            setError(false);
-            onDelete(feed.id);
-        }, 2000);
-    };
-    const handlePostHide = () => {
-        setPostHide(!postHide)
-    };
+    });
 
     return(
         <>
@@ -86,17 +86,78 @@ export const Feed = ({ feed, onDelete, userId }) => {
                                         <h5 className="Status__Post">{feed.content}</h5>
                                     </div>
                                 }
-
                                 {feed.image_url &&
                                     <div className='Feed-Photo-Video' id='dataPost'>
                                         <img src={feed.image_url} alt="" className="Image__Post" id='imagePost'/>
                                     </div>
                                 }
-
                             </div>
                         </div>
                         <div className='Footer'>
-                            <Navbar likeCount={likeCount} postId={feed.id} userId={userId}/>
+                            <div>
+                                <Navbar likeCount={likeCount} postId={feed.id} userId={userId}/>
+                            </div>
+                            <div className='comment-section'>
+                                <div className=' flex-center-start'>
+                                    <img src={feed.profile_picture} alt="" className='profile' />
+                                    <input type="text" placeholder='Write a comment...' />
+                                </div>
+                                <div className='comments-list flex-start-center flex-column'>
+                                    <div className='user-comment flex-center-start'>
+                                        <div className='user-comment-content flex-start-center'>
+                                            <div className='user-profile'>
+                                                <img src={feed.profile_picture} alt="" className='profile' />
+                                            </div>
+                                            <div className='comment-area container'>
+                                                <div className='flex-center-spacebetween'>
+                                                    <p>{feed.username}</p>
+                                                    {/* <p>14 Min.</p> */}
+                                                </div>
+                                                <div className='flex-center-spacebetween'>
+                                                    <p>
+                                                        I like it!<br/>
+                                                        wish
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='like-area flex-center-center flex-column'>
+                                            <div className='like-comment icon-bg'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"></path></svg>
+                                            </div>
+                                            <p>10Likes</p>
+                                        </div>
+                                    </div>
+                                    <div className='user-comment flex-center-start'>
+                                        <div className='user-comment-content flex-start-center'>
+                                            <div className='user-profile'>
+                                                <img src={feed.profile_picture} alt="" className='profile' />
+                                            </div>
+                                            <div className='comment-area container'>
+                                                <div className='flex-center-spacebetween'>
+                                                    <p>{feed.username}</p>
+                                                    {/* <p>14 Min.</p> */}
+                                                </div>
+                                                <div className='flex-center-spacebetween'>
+                                                    <p>
+                                                        I like it!<br/>
+                                                        I like it!<br/>
+                                                        I like it!<br/>
+                                                        I like it!<br/>
+                                                        wish
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='like-area flex-center-center flex-column'>
+                                            <div className='like-comment icon-bg'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"></path></svg>
+                                            </div>
+                                            <p>20Likes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -12,6 +12,9 @@
         justify-content: start;
         flex-direction: column;
         gap: 10px;
+        .ChatList{
+            height: 500px !important;
+        }
         .Title, .Input-Container, .ChatList{
             width: 100%;
         }
@@ -97,23 +100,50 @@
         }
     }
 }
-
 .ChatBar{
     background-color: rgb(0, 170, 255) !important;
     color: white !important;
     height: 100px;
     width: 90%;
-    padding: 10px;
+    padding: 2px 10px;
+    border-radius: 6px;
     cursor: pointer;
-    .Profile-Container{
-        width: 20%;
-    }
     .Chat-Data{
         width: 80%;
         align-items: start;
-        .Name-Time{
+        .name-time{
             width: 100%;
             justify-content: space-between;
         }
+        .message-seen{
+            width: 100%;
+            svg{
+                height: 20px;
+                width: 20px;
+            }
+        }
     }
+}
+
+/*----------------------MOBILE DEVICES----------------------*/
+@media screen and (max-width: 768px){
+    .ChatBar{
+        width: fit-content;
+        height: fit-content;
+        border-radius: 0 !important;
+        background-color: transparent !important;
+        padding: 0;
+        .Chat-Data{
+            display: none;
+        }
+    }
+}
+/*----------------------TABLET DEVICES----------------------*/
+@media only screen and (max-width: 768px ) and (max-width:1023px){
+}
+/*----------------------LAPTOP DEVICES----------------------*/
+@media only screen and (max-width: 1024px ) and (max-width:1439px){
+}
+/*----------------------DESCKTOP DEVICES----------------------*/
+@media only screen and(max-width: 1440px ){
 }

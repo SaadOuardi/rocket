@@ -1,5 +1,10 @@
 import React, {useState} from 'react';
-import Profile from '../../../assets/images/Profile/Ninja.jpg';
+import Profile2 from '../../../assets/images/Profile/Ninja.jpg';
+import Profile3 from '../../../assets/images/Profile/Tfue.png';
+import Profile1 from '../../../assets/images/Profile/ElonMusk.webp';
+import Profile4 from '../../../assets/images/Profile/Fortnite.png';
+import Profile5 from '../../../assets/images/Profile/def.jpg';
+import Profile6 from '../../../assets/images/Profile/def.jpg';
 import './Message.scss';
 
 const Messages = () => {
@@ -23,18 +28,18 @@ const Messages = () => {
                         <input type='text' placeholder='Search or start a new chat'/>
                     </div>
                     <div className='ChatList Flex-Center Flex-Column Scroll'>
-                        <ChatBar Profile={Profile} Username='MrJoker' Message='I love you <3' Time='1h'/>
-                        <ChatBar Profile={Profile} Username='Ninja' Message='Hi there!' Time='Yesterday'/>
-                        <ChatBar Profile={Profile} Username='FazeClan' Message='You can Join' Time='4:30AM'/>
-                        <ChatBar Profile={Profile} Username='MrJoker' Message='I love you <3' Time='1h'/>
-                        <ChatBar Profile={Profile} Username='Ninja' Message='Hi there!' Time='Yesterday'/>
-                        <ChatBar Profile={Profile} Username='FazeClan' Message='You can Join' Time='4:30AM'/>
-                        <ChatBar Profile={Profile} Username='MrJoker' Message='I love you <3' Time='1h'/>
-                        <ChatBar Profile={Profile} Username='Ninja' Message='Hi there!' Time='Yesterday'/>
-                        <ChatBar Profile={Profile} Username='FazeClan' Message='You can Join' Time='4:30AM'/>
-                        <ChatBar Profile={Profile} Username='MrJoker' Message='I love you <3' Time='1h'/>
-                        <ChatBar Profile={Profile} Username='Ninja' Message='Hi there!' Time='Yesterday'/>
-                        <ChatBar Profile={Profile} Username='FazeClan' Message='You can Join' Time='4:30AM'/>
+                        <ChatBar Profile={Profile1} Username='Elon Musk' Message='I love you <3' Time='1h'/>
+                        <ChatBar Profile={Profile2} Username='Ninja' Message='Hi there!' Time='Yesterday'/>
+                        <ChatBar Profile={Profile3} Username='FazeClan' Message='You can Join' Time='4:30AM'/>
+                        <ChatBar Profile={Profile4} Username='MrJoker' Message='I love you <3' Time='1h'/>
+                        <ChatBar Profile={Profile5} Username='Ninja' Message='Hi there!' Time='Yesterday'/>
+                        <ChatBar Profile={Profile6} Username='FazeClan' Message='You can Join' Time='4:30AM'/>
+                        <ChatBar Profile={Profile1} Username='Elon Musk' Message='I love you <3' Time='1h'/>
+                        <ChatBar Profile={Profile2} Username='Ninja' Message='Hi there!' Time='Yesterday'/>
+                        <ChatBar Profile={Profile3} Username='FazeClan' Message='You can Join' Time='4:30AM'/>
+                        <ChatBar Profile={Profile4} Username='MrJoker' Message='I love you <3' Time='1h'/>
+                        <ChatBar Profile={Profile5} Username='Ninja' Message='Hi there!' Time='Yesterday'/>
+                        <ChatBar Profile={Profile6} Username='FazeClan' Message='You can Join' Time='4:30AM'/>
                     </div>
                 </div>
                 <div className='Chat-RightSide'>
@@ -43,10 +48,10 @@ const Messages = () => {
                             <div className='Header-Content Flex-Center'>
                                 <div className='UserConversation Flex-Center'>
                                     <div>
-                                        <img src={Profile} alt="" className='Profile' />
+                                        <img src={Profile1} alt="" className='Profile' />
                                     </div>
                                     <div className=''>
-                                        <h1>Ninja</h1>
+                                        <h1>Elon Musk</h1>
                                     </div>
                                 </div>
                                 <div className='Conversation-Options Flex-Center'>
@@ -66,7 +71,7 @@ const Messages = () => {
                             <div className='Body-Content Scroll'>
                                 <div className='UserConversation'>
                                     <div>
-                                        <img src={Profile} alt="" />
+                                        <img src={Profile1} alt="" />
                                     </div>
                                     <div className='Background'>
                                         <p>Good Morning!</p>
@@ -79,7 +84,7 @@ const Messages = () => {
                                 </div>
                                 <div className='UserConversation'>
                                     <div>
-                                        <img src={Profile} alt="" />
+                                        <img src={Profile1} alt="" />
                                     </div>
                                     <div className='Background'>
                                         <p>I'm doing great and U?</p>
@@ -92,7 +97,7 @@ const Messages = () => {
                                 </div>
                                 <div className='UserConversation'>
                                     <div>
-                                        <img src={Profile} alt="" />
+                                        <img src={Profile1} alt="" />
                                     </div>
                                     <div className='Background'>
                                         <p>Good Morning!</p>
@@ -105,7 +110,7 @@ const Messages = () => {
                                 </div>
                                 <div className='UserConversation'>
                                     <div>
-                                        <img src={Profile} alt="" />
+                                        <img src={Profile1} alt="" />
                                     </div>
                                     <div className='Background'>
                                         <p>I'm doing great and U?</p>
@@ -118,7 +123,7 @@ const Messages = () => {
                                 </div>
                                 <div className='UserConversation'>
                                     <div>
-                                        <img src={Profile} alt="" />
+                                        <img src={Profile1} alt="" />
                                     </div>
                                     <div className='Background'>
                                         <p>Good Morning!</p>
@@ -131,7 +136,7 @@ const Messages = () => {
                                 </div>
                                 <div className='UserConversation'>
                                     <div>
-                                        <img src={Profile} alt="" />
+                                        <img src={Profile1} alt="" />
                                     </div>
                                     <div className='Background'>
                                         <p>I'm doing great and U?</p>
@@ -144,7 +149,7 @@ const Messages = () => {
                                 </div>
                                 <div className='UserConversation'>
                                     <div>
-                                        <img src={Profile} alt="" />
+                                        <img src={Profile1} alt="" />
                                     </div>
                                     <div className='Background'>
                                         <p>Good Morning!</p>
@@ -157,7 +162,7 @@ const Messages = () => {
                                 </div>
                                 <div className='UserConversation'>
                                     <div>
-                                        <img src={Profile} alt="" />
+                                        <img src={Profile1} alt="" />
                                     </div>
                                     <div className='Background'>
                                         <p>I'm doing great and U?</p>
@@ -202,22 +207,21 @@ export default Messages;
 
 
 
-export const ChatBar = ({Profile,Username,Message,Time}) => {
+export const ChatBar = ({Profile, Username, Message, Time}) => {
     return (
         <>
             <div className='ChatBar container Flex-Center'>
                 <div className='Profile-Container'>
-                    <img src={Profile} alt="" className='Profile'/>
+                    <img src={Profile} alt={Username} className='Profile'/>
                 </div>
-                
                 <div className='Chat-Data Flex-Center Flex-Column'>
-                    <div className='Name-Time Flex-Center Space-Between'>
+                    <div className='name-time Flex-Center Space-Between'>
                         <p>{Username}</p>
                         <p>{Time}</p>
                     </div>
-
-                    <div className='Flex-Center'>
-                        <p>{Message}</p> 
+                    <div className='message-seen flex-space-between'>
+                        <p>{Message}</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.602 13.7599L13.014 15.1719L21.4795 6.7063L22.8938 8.12051L13.014 18.0003L6.65 11.6363L8.06421 10.2221L10.189 12.3469L11.6025 13.7594L11.602 13.7599ZM11.6037 10.9322L16.5563 5.97949L17.9666 7.38977L13.014 12.3424L11.6037 10.9322ZM8.77698 16.5873L7.36396 18.0003L1 11.6363L2.41421 10.2221L3.82723 11.6352L3.82604 11.6363L8.77698 16.5873Z"></path></svg>
                     </div>
                 </div>
             </div>
